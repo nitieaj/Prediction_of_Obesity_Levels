@@ -1,33 +1,32 @@
-## Project_5-Prediction_of_Drinking_Water_Portability
+## Project_8-Prediction_of_Obesity_Levels
 ## Description
 Context
-Access to safe drinking water is essential to health, a basic human right, and a component of effective policy for health protection. This is important as a health and development issue at a national, regional, and local level. In some regions, it has been shown that investments in water supply and sanitation can yield a net economic benefit, since the reductions in adverse health effects and health care costs outweigh the costs of undertaking the interventions.
+Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru and Mexico
 
 ### Null hypothesis: 
-There is no relationship between optimal levels of chemical components contained in treated water and portability of consumed water.
+There is no relationship between obesity levels and physical condition including eating habits
 
-See if you can find any other trends in the data to predict portability of consumed water or find any clear indications of relationships between the predictors.
+Explore the data for trends in the data to predict obesity levels or find any clear indications of relationships between the predictors.
 
 ### Content
-The drinkingwaterpotability.csv file contains water quality metrics for 3276 different water bodies.
-1.	pH value:
-PH is an important parameter in evaluating the acid-base balance of water. It is also the indicator of the acidic or alkaline condition of water status. WHO has recommended the maximum permissible limit of pH from 6.5 to 8.5. The current investigation ranges were 6.52–6.83 which are in the range of WHO standards.
-2.	Hardness:
-Hardness is mainly caused by calcium and magnesium salts. These salts are dissolved from geologic deposits through which water travels. The length of time water is in contact with hardness-producing material helps determine how much hardness there is in raw water. Hardness was originally defined as the capacity of water to precipitate soap caused by Calcium and Magnesium.
-3.	Solids (Total dissolved solids - TDS):
-Water has the ability to dissolve a wide range of inorganic and some organic minerals or salts such as potassium, calcium, sodium, bicarbonates, chlorides, magnesium, sulfates, etc. These minerals produced an unwanted taste and diluted color in the appearance of water. This is the important parameter for the use of water. The water with a high TDS value indicates that water is highly mineralized. The desirable limit for TDS is 500 mg/l and the maximum limit is 1000 mg/l which is prescribed for drinking purposes.
-4.	Chloramines:
-Chlorine and chloramine are the major disinfectants used in public water systems. Chloramines are most commonly formed when ammonia is added to chlorine to treat drinking water. Chlorine levels up to 4 milligrams per liter (mg/L or 4 parts per million (ppm)) are considered safe in drinking water.
-5.	Sulfate:
-Sulfates are naturally occurring substances that are found in minerals, soil, and rocks. They are present in ambient air, groundwater, plants, and food. The principal commercial use of sulfate is in the chemical industry. Sulfate concentration in seawater is about 2,700 milligrams per liter (mg/L). It ranges from 3 to 30 mg/L in most freshwater supplies, although much higher concentrations (1000 mg/L) are found in some geographic locations.
-6.	Conductivity:
-Pure water is not a good conductor of electric current rather’s a good insulator. An increase in ions concentration enhances the electrical conductivity of water. Generally, the amount of dissolved solids in water determines electrical conductivity. Electrical conductivity (EC) actually measures the ionic process of a solution that enables it to transmit current. According to WHO standards, EC value should not exceed 400 μS/cm.
-7.	Organic_carbon:
-Total Organic Carbon (TOC) in source waters comes from decaying natural organic matter (NOM) as well as synthetic sources. TOC is a measure of the total amount of carbon in organic compounds in pure water. According to US EPA < 2 mg/L as TOC in treated / drinking water, and < 4 mg/Lit in source water which is use for treatment.
-8.	Trihalomethanes:
-THMs are chemicals that may be found in water treated with chlorine. The concentration of THMs in drinking water varies according to the level of organic material in the water, the amount of chlorine required to treat the water, and the temperature of the water that is being treated. THM levels up to 80 ppm are considered safe in drinking water.
-9.	Turbidity:
-The turbidity of water depends on the quantity of solid matter present in the suspended state. It is a measure of the light-emitting properties of water and the test is used to indicate the quality of waste discharge with respect to the colloidal matter. The mean turbidity value obtained for Wondo Genet Campus (0.98 NTU) is lower than the WHO recommended value of 5.00 NTU.
-10.	Potability:
-Indicates if water is safe for human consumption where 1 means Potable and 0 means Not potable.
+The dataset contains data for the estimation of obesity levels in people from the countries of Mexico, Peru and Colombia, with ages between 14 and 61 and diverse eating habits and physical condition as mentioned by [1], data was collected using a web platform with a survey (see Table 1 in the attached paper) where anonymous users answered each question, then the information was processed obtaining 17 attributes and 2111 records, after a balancing process.
+
+The attributes related with eating habits are: 
+1. Frequent consumption of high caloric food (FAVC) 
+2. Frequency of consumption of vegetables (FCVC)
+3. Number of main meals (NCP), Consumption of food between meals (CAEC)
+4. Consumption of water daily (CH20), and Consumption of alcohol (CALC). 
+The attributes related with the physical condition are: 
+5. Calories consumption monitoring (SCC) 
+6. Physical activity frequency (FAF) 
+7. Time using technology devices (TUE)
+8. Transportation used (MTRANS)
+other variables obtained were: 
+9. Gender, Age, Height and Weight.
+
+Finally, all data was labeled and the class variable NObesity was created with the values of: Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II and Obesity Type III, based on Equation  and information from WHO and Mexican Normativity. 
+
+The data contains numerical data and continous data, so it can be used for analysis based on algorithms of classification, prediction, segmentation and association. 
+See paper here: https://www.sciencedirect.com/science/article/pii/S2352340919306985?via%3Dihub
+Data is available in CSV format and ARFF format to be used with the Weka tool..
 

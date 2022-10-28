@@ -1,4 +1,4 @@
-## Project_8-Prediction_of_Obesity_Levels
+## Prediction_of_Obesity_Levels
 ## Description
 ### Context
 

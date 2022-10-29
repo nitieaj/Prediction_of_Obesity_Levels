@@ -1,0 +1,19 @@
+---
+title: "Project_2"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
